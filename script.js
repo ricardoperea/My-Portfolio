@@ -42,13 +42,3 @@ window.onscroll = function(){
 }
 
 
-// Codigo para descargar pdf
-document.querySelector("button").addEventListener("click", () => {
-    const link = document.createElement("a");
-    link.href = "/pdf/cvricardo23ingles.pdf";
-    link.setAttribute("download", "document.pdf");
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-});
-
