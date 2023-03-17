@@ -9,6 +9,356 @@
     <meta name="author" content="Ricardo Alfredo Colin Perea">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Soy ingeniero de software, programador, Full Stack Developer con experiencia en desarrollo de Front End y Back End. Soy mexicano y vivo en la Ciudad de México. Trabajo como freelance y realizo proyectos en remoto.">
+    <meta name="keywords" content="Ricardo Alfredo Colin Perea, Full Stack Developer, Front End Developer, Back End Developer, Mexicano, Ciudad de México, Freelance, Ricardo Colin Perea, Ricardo Colin, Ricardo Perea, Ricardo Alfredo, Mexico, CDMX, programador, ingeniero de software, Remoto">
+    <meta name="author" content="Ricardo Alfredo Colin Perea">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Portafolio Ricardo ALfredo Colín Perea." />
+    <meta property="og:description" content="Portflio Ricardo ALfredo Colín Perea" />
+    <meta property="og:image" content="img/Portfolio Ricardo ALfredo Colín Perea.jpg" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Ricardo Alfredo Colín Perea - Portfolio - Software Engineer </title>
+        <link rel="shortcut icon" href="img/clipicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Rik</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobreMi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <div>
+                    <img src="img/logo.png" alt="ricardo alfredo colin perea">
+                </div>
+            </div>
+            <h1>Ricardo Colín Perea</h1>
+            <h2>Software Engineer. <br> Full Stack Developer. <br> Multimedia Designer. </h2>
+            <div class="redes">
+                <a href="https://github.com/ricardoperea" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=%2B525561650401&text=" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/ricardo-perea/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobreMi" class="sobreMi">
+        <div class="contenido-seccion">
+            <h2>About me:</h2>
+            <p><span>Hello, I am Ricardo Colín Perea.</span> <br><br> Software Engineer.<br> Full Stack Developer. <br> Multimedia Designer.
+            </p>
+            <div class="fila">
+                <br>
+                <!-- datos personales 
+                <div class="col">
+                    <h3>Personal Details:</h3>
+                    <ul>
+                        <li>
+                            <strong>Mobile:</strong>
+                            +52 5561650401
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            aztro812@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Address:</strong>
+                            CDMX, México
+                        </li>
+                    </ul>
+                </div> 
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests:</h3>
+                    <br>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>ROBOTIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>AI</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-microchip"></i>    
+                            <span>ARDUINO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-circle-nodes"></i>                        
+                            <span>WEB 3.0</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-glasses"></i>
+                            <span>READ</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-plane"></i>
+                            <span>TRAVEL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>HACKING</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button>
+                <i class="fa-solid fa-download"></i>
+                <a class="cv" href="https://drive.google.com/file/d/1rGfrYh_6kB054Bqf-19z0Y1whnABxeOq/view?usp=sharing" target="_blank" download>Download CV</a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <br><br>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>72%</span>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="skill">
+                                    <span>CSS</span>
+                                    <div class="barra-skill">
+                                        <div class="progreso">
+                                            <span>81%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>HTML</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>83%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <div class="skill">
+                                                        <span>Multimedia Design</span>
+                                                        <div class="barra-skill">
+                                                        <div class="progreso">
+                                                        <span>90%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                    <!-- Professional Skills -->
+                        <div class="col">
+                                <h3>Professional Skills</h3>
+                                    <div class="skill">
+                                        <span>Focus</span>
+                                            <div class="barra-skill">
+                                                <div class="progreso">
+                                                    <span>87%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill">
+                                                    <span>Project Management</span>
+                                                        <div class="barra-skill">
+                                                            <div class="progreso">
+                                                            <span>92%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill">
+                                                            <span>Communication</span>
+                                                            <div class="barra-skill">
+                                                                <div class="progreso">
+                                                                    <span>85%</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="skill">
+                                                                <span>Teamwork</span>
+                                                            <div class="barra-skill">
+                                                        <div class="progreso">
+                                                    <span>84%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                        <span>Creativity</span>
+                                    <div class="barra-skill">
+                                <div class="progreso">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+    <!-- SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <a href="https://ricardoperea.github.io/Movie-App/"></a>
+
+        <h1>Portfolio</h1>
+        <div class="contenido-seccion">
+            <h2>Full Stack Developer</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/html css & js.jpg" alt="proyectos Full Stack Developer Ricardo Alfredo Colin Perea">
+                    <div class="overlay">
+                        <h3>PROJECTS:</h3>
+                        <br>
+                        <p>
+                        <li><a href="https://ricardoperea.github.io/Movie-App/" target="_blank"><strong>Movie App</strong></a></li>  
+                        <li><a href="https://ricardoperea.github.io/dictionary-app/" target="_blank"><strong>English Dictionary</strong></a></li> 
+                        <li><a href="https://ricardoperea.github.io/Expanding-Cards/" target="_blank"><strong>Expanding Cards</strong></a></li>
+                        <li><a href="https://ricardoperea.github.io/Climate-Application/" target="_blank"><strong>Climatic App</strong></a></li>
+                        <li><a href=https://ricardoperea.github.io/Password-Generator/ target="_blank"><strong>Password Generator</strong></a></li>
+                        <li><a href="https://ricardoperea.github.io/Balloon-Game/" target="_blank"><strong>Balloon Game</strong></a></li>  
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <h2>Welcome with AI</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/asistente ricardo alfredo colin perea.png" alt="perfil ia de Ricardo Alfredo Colin Perea">
+                    <div class="overlay">
+                        <!--<h3>Welcome</h3> -->
+                        <p>
+                            <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/807462465?h=c93d3d7b8c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="artificial intelligence assistant"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <h2>Multimedia Designer</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/multimedia.jpg" alt="multimedia designer Ricardo Alfredo Colin Perea">
+                    <div class="overlay">
+                        <h3>SERVICES:</h3>
+                        <br>
+                        <p>
+                            <div style="padding:59% 0 0 0;position:relative;" ><iframe src="https://player.vimeo.com/video/807398824?h=b67192cbc0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Presentaci&amp;oacute;n en V&amp;iacute;deo Anuncio de Fallecimiento Cantante con Fotograf&amp;iacute;as, Negro, Blanco y Marr&amp;oacute;n (1920 &amp;times; 1080&amp;nbsp;px) (Video) (5).mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- SECCION CONTACT -->
+    <section id="contact" class="contact">
+    <div class="contenido-seccion">
+        <h2>Contact:</h2>
+        <br>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <input type="text" placeholder="Your name:" required>
+                <input type="text" placeholder="Your phone number:" required>
+                <input type="text" placeholder="Your email:" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message:" required></textarea>
+                <button type="button" onclick="window.location='mailto:aztro812@hotmail.com';">
+                    Send message <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+            
+            <!-- Mapa -->
+            <div class="col">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.433549678742!2d-99.17881508185953!3d19.393664911220213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff718f4416e1%3A0x6e35698f0852629c!2sWorld%20Trade%20Center%20Ciudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1678910443051!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+                </div>
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>México  City
+                        </li>
+                        <!--<li>
+                            <i class="fa-solid fa-phone"></i>Contact me: <br>        +52 5561650401
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>Email: aztro812@hotmai.com
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!-- FOOTER -->
+        <footer class="footer">
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="https://github.com/ricardoperea" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=%2B525561650401&text=" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/ricardo-perea/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </footer>
+
+        <script src="script.js">
+
+        </script>
+</body>
+</html>
+
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
